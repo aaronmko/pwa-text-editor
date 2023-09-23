@@ -28,6 +28,12 @@ export const putDb = async (content) => {
 export const getDb = async () => {
   console.log("Text has been retrieved from the database.");
   const jateDb = await openDB("jate", 1);
+  const tx = jateDb.transaction("jate", "readonly");
+  const store = tx.objectStore("jate");
+  const request = store.getAll();
+  const result = await request;
+  console.log("result.value", result.value);
+  return result.value;
 }
 
 initdb();
