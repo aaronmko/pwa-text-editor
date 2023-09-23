@@ -1,8 +1,7 @@
 # Progressive Web Applications (PWA) Text Editor
 
 ## **Description**
-A simple text editor that runs in the browser and meets the PWA criteria. The application functions online as well as offline. 
-
+This program is a text editor that can be run in-browser, or be installed to the PC or mobile device with the "install" button at the top-left of the display.
 
 ## **Built With:**
   + [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
